@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="JoyaMovil.Dos_0">
+    <StackLayout BackgroundColor="#F2F1F0">
+        <StackLayout Margin="10"/>
+        <StackLayout>
+            <Grid>
+                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                 </Grid.RowDefinitions>
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="80*"/>
+                     <ColumnDefinition Width="*"/>
+                 </Grid.ColumnDefinitions>
+                 <Image
+                     x:Name="BanerNivel"
+                     Source="bannerseleccionnivel.png"
+                     Grid.Row="0"
+                     Grid.Column ="1"/>
+                <Image
+                    x:Name="BanerPaisaje"
+                     Source="bannerseleccionnivel_paisajismo.png"
+                     Grid.Row="0"
+                     Grid.Column ="1"
+                     />
+                <Image
+                    x:Name="BanerResidencia"
+                     Source="bannerseleccionnivel_residencial.png"
+                     Grid.Row="0"
+                     Grid.Column ="1"
+                     />
+            </Grid>
+        </StackLayout>
+        
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image
+                    x:Name="Origial"
+                    Source="EDITABLE_SELECCION_ZONA_RESIDENCIAL_BOTON4.png"
+                    Margin = "0"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    />
+                <Image
+                    x:Name="SelecResidencia"
+                    Source="EDITABLE_SELECCION_ZONA_RESIDENCIAL_BOTON2.png"
+                    Margin = "0"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    IsVisible="false"
+                    />
+                <Image
+                    x:Name="SelecPaisaje"
+                    Source="seleccionnivelpaisajismo.png"
+                    Margin = "0"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    IsVisible="false"
+                    />
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="60*"/>
+                        <RowDefinition Height="20*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="1"
+                        Grid.Column="3"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="2"
+                        Grid.Column="2"
+                        Clicked="BotonNavegacion"
+                        CommandParameter=",,Dos_2"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                    <ImageButton
+                        Grid.Row="1"
+                        Grid.Column="2"
+                        CommandParameter=",,Dos_1"
+                        Clicked="BotonNavegacionRes"
+                        BackgroundColor="Transparent"
+                        BorderColor="Transparent"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" Margin="0">
+             <Grid BackgroundColor="#F2F1F0" RowSpacing="1">
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                 <Grid.RowDefinitions>
+                     <RowDefinition Height="40"/>
+                 </Grid.RowDefinitions>
+                 <ImageButton Source="07_BACK_BUTTON.png"
+                              
+                              Margin="0" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
+                 <ImageButton Source="05_HOME_BUTTON.png"
+                              
+                              Margin="0" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
+                 <ImageButton Source="06_SCENES_BUTTON.png"
+                              Clicked="MenuLateral"
+                              Margin="0" Grid.Row="0" Grid.Column="3"  HorizontalOptions="End"/>
+             </Grid>
+        </StackLayout>
+        <StackLayout Margin="7"/>
+     </StackLayout>
+</ContentPage>

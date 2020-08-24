@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JoyaMovil.Ocho_8">
+    <StackLayout BackgroundColor="#F2F1F0">
+        <StackLayout Margin="15"/>
+        <StackLayout>
+            <Grid>
+                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                 </Grid.RowDefinitions>
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="80*"/>
+                     <ColumnDefinition Width="*"/>
+                 </Grid.ColumnDefinitions>
+                <Image
+                    Source="habitaciones.tocador.banner.png"
+                    Margin = "0"
+                    Grid.Row="0"
+                    Grid.Column ="1"/>
+            </Grid>
+        </StackLayout>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Image
+                    Source="dimeable.png"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+                <Grid
+                    x:Name="CANdata"
+                    Grid.Column="1"
+                    Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="25*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton
+                        Source="1.extrachico.png"
+                        Grid.Column="0"
+                        ClassId="Dimeable"
+                        StyleId="0"
+                        CommandParameter="09,7,100,0,1.extrachico.png,1.extrachico.selecc.png"
+                        Clicked="SeleccionDimeable"/>
+                    <!--09,7-->
+                    <ImageButton
+                        Source="2.extrachico.png"
+                        Grid.Column="1"
+                        ClassId="Dimeable"
+                        StyleId="0"
+                        CommandParameter="0D,3,100,0,2.extrachico.png,2.extrachico.selecc.png"
+                        Clicked="SeleccionDimeable"/>
+                    <!--0D,3-->
+                    <ImageButton
+                        Source="3.extrachico.png"
+                        Grid.Column="2"
+                        ClassId="Dimeable"
+                        StyleId="0"
+                        CommandParameter="0D,8,100,0,3.extrachico.png,3.extrachico.selecc.png"
+                        Clicked="SeleccionDimeable"/>
+                    <!--0D,8-->
+                    <ImageButton
+                        Source="4.extrachico.png"
+                        Grid.Column="3"
+                        ClassId="Dimeable"
+                        StyleId="0"
+                        CommandParameter="0A,7,100,0,4.extrachico.png,4.extrachico.selecc.png"
+                        Clicked="SeleccionDimeable"/>
+                    <!--0A,7-->
+                </Grid>
+                <Grid
+                    x:Name="Accion"
+                    Grid.Column="1"
+                    Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton
+                        Source="ON.png"
+                        Grid.Column="0"
+                        ClassId="BotonOnOff"
+                        StyleId="0"
+                        CommandParameter="xx,x,100,x,ON.png,ON.selecc.png"
+                        Clicked="AccionOnOff"/>
+                    <ImageButton
+                        Source="OFF.png"
+                        Grid.Column="1"
+                        ClassId="BotonOnOff"
+                        StyleId="0"
+                        CommandParameter="xx,x,000,x,OFF.png,OFF.selecc.png"
+                        Clicked="AccionOnOff"/>
+                    <Slider
+                        Grid.Column="2"
+                        ThumbImageSource="boton.barra.dimeable.png"
+                        Maximum="100"
+                        Minimum="0"
+                        MinimumTrackColor="DimGray"
+                        ValueChanged="AccionSlider"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" Margin="0">
+             <Grid BackgroundColor="#F2F1F0" RowSpacing="1">
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                 <Grid.RowDefinitions>
+                     <RowDefinition Height="40"/>
+                 </Grid.RowDefinitions>
+                 <ImageButton Source="07_BACK_BUTTON.png"
+                              Clicked="BotonBack"
+                              Margin="0" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
+                 <ImageButton Source="05_HOME_BUTTON.png"
+                              Clicked="BotonHome"
+                              Margin="0" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
+                 <ImageButton Source="06_SCENES_BUTTON.png"
+                              Clicked="MenuLateral"
+                              Margin="0" Grid.Row="0" Grid.Column="3"  HorizontalOptions="End"/>
+             </Grid>
+        </StackLayout>
+        <StackLayout Margin="7"/>
+    </StackLayout>
+</ContentPage>

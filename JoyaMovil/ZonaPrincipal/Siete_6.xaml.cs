@@ -1,0 +1,58 @@
+﻿using System;
+using System.Collections.Generic;
+using JoyaMovil.ViewModel;
+using Xamarin.Forms;
+
+namespace JoyaMovil
+{
+    public partial class Siete_6 : ContentPage
+    {
+        public Siete_6()
+        {
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+        //Navegacion
+        PageNavigation navegacion = new PageNavigation();
+        async void BotonNavegacion(object sender, EventArgs eventArgs)
+        {
+            ImageButton img = (ImageButton)sender;
+            //Navegar a la pagina
+            if (await navegacion.Navegar(img))
+            {
+                img.Source = navegacion.lastImage;
+                await Navigation.PushAsync(navegacion.page);
+            }
+            /*
+            if(sender == navMotoresNado && login.sesionUsuario.NivelUsuario == Models.TipoUsuario.Usuario)
+            {
+                await DisplayAlert("Error", "Nivel de autorización no superado.\nSi cree que esto es un error contacte al administrador.", "OK");
+            }
+            else
+            {
+                //Navegar a la pagina
+                if (await navegacion.Navegar(img))
+                {
+                    img.Source = navegacion.lastImage;
+                    await Navigation.PushAsync(navegacion.page);
+                }
+            }*/
+        }
+
+        void BotonBack(object sender, EventArgs e)
+        {
+            if (Navigation.NavigationStack.Count > 0)
+                Navigation.PopAsync();
+        }
+
+        void BotonHome(object sender, EventArgs e)
+        {
+            Navigation.PopToRootAsync();
+        }
+
+        void MenuLateral(object sender, EventArgs eventArgs)
+        {
+            (App.Current.MainPage as MasterDetailPage).IsPresented = true;
+        }
+    }
+}

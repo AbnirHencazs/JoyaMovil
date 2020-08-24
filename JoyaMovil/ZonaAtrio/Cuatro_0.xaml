@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JoyaMovil.Cuatro_0">
+    <StackLayout BackgroundColor="#F2F1F0">
+        <StackLayout Margin="15"/>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image
+                    Source="atrio.paisajismo.banner.png"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+                <Grid
+                    RowSpacing="15"
+                    Grid.Column="1"
+                    Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="50*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <ImageButton
+                        Source="estacionamiento.png"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        CommandParameter="estacionamiento.png,estacionamiento.selecc.png,Cuatro_1"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="fuente.png"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        CommandParameter="fuente.png,fuente.selecc.png,Cuatro_2"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="frutales.png"
+                        Grid.Row="1"
+                        Grid.Column="0"
+                        CommandParameter="frutales.png,frutales.selecc.png,Cuatro_3"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="tropicales.png"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        CommandParameter="tropicales.png,tropicales.selecc.png,Cuatro_4"
+                        Clicked="BotonNavegacion"/>
+                </Grid>
+            </Grid>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" Margin="0">
+             <Grid BackgroundColor="#F2F1F0" RowSpacing="1">
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                 <Grid.RowDefinitions>
+                     <RowDefinition Height="40"/>
+                 </Grid.RowDefinitions>
+                 <ImageButton Source="07_BACK_BUTTON.png"
+                              Clicked="BotonBack"
+                              Margin="0" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
+                 <ImageButton Source="05_HOME_BUTTON.png"
+                              Clicked="BotonHome"
+                              Margin="0" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
+                 <ImageButton Source="06_SCENES_BUTTON.png"
+                              Clicked="MenuLateral"
+                              Margin="0" Grid.Row="0" Grid.Column="3"  HorizontalOptions="End"/>
+             </Grid>
+        </StackLayout>
+        <StackLayout Margin="7"/>
+    </StackLayout>
+</ContentPage>

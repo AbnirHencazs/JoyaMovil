@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JoyaMovil.Seis_10_2">
+    <StackLayout BackgroundColor="#F2F1F0">
+        <StackLayout Margin="15"/>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image
+                    Source="areacomun.desayunador.banner.png"
+                    Grid.Column="1"
+                    Grid.Row="0"/>
+            </Grid>
+        </StackLayout>
+        <StackLayout>
+            <ScrollView>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="80*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <Image
+                        Source="persianas.png"
+                        Grid.Column="1"
+                        Grid.Row="0"/>
+                    <Grid
+                        x:Name="CANdataBlackOut"
+                        Grid.Column="1"
+                        Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="33*"/>
+                            <ColumnDefinition Width="33*"/>
+                            <ColumnDefinition Width="33*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+                        <ImageButton
+                            Source="1.chico.png"
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            ClassId="Persiana"
+                            StyleId="0"
+                            CommandParameter="76,8,100,0,1.chico.png,1.chico.selecc.png"
+                            Clicked="SeleccionPersiana"/>
+                        <!--76,8-->
+                        <ImageButton
+                            Source="2.chico.png"
+                            Grid.Column="1"
+                            Grid.Row="0"
+                            ClassId="Persiana"
+                            StyleId="0"
+                            CommandParameter="76,9,100,0,2.chico.png,2.chico.selecc.png"
+                            Clicked="SeleccionPersiana"/>
+                        <!--76,9-->
+                        <ImageButton
+                            Source="3.chico.png"
+                            Grid.Column="2"
+                            Grid.Row="0"
+                            ClassId="Persiana"
+                            StyleId="0"
+                            CommandParameter="76,A,100,0,3.chico.png,3.chico.selecc.png"
+                            Clicked="SeleccionPersiana"/>
+                        <!--76,A-->
+                        <ImageButton
+                            Source="4.chico.png"
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            ClassId="Persiana"
+                            StyleId="0"
+                            CommandParameter="76,B,100,0,4.chico.png,4.chico.selecc.png"
+                            Clicked="SeleccionPersiana"/>
+                        <!--76,B-->
+                        <ImageButton
+                            Source="5.chico.png"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            ClassId="Persiana"
+                            StyleId="0"
+                            CommandParameter="76,C,100,0,5.chico.png,5.chico.selecc.png"
+                            Clicked="SeleccionPersiana"/>
+                        <!--76,C-->
+                        <!--
+                        <ImageButton
+                            Source="6.chico.png"
+                            Grid.Column="2"
+                            Grid.Row="1"
+                            ClassId="Persiana"
+                            StyleId="0"
+                            CommandParameter="77,F,100,0,6.chico.png,6.chico.selecc.png"
+                            Clicked="SeleccionPersiana"/>
+                        -->
+                        <!--77,F-->
+                    </Grid>
+                    <Image
+                        Source="mosquitero.png"
+                        Grid.Column="1"
+                        Grid.Row="2"/>
+                    <Grid
+                        x:Name="CANdataMosquitero"
+                        Grid.Column="1"
+                        Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="50*"/>
+                            <ColumnDefinition Width="50*"/>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton
+                            Source="1.mediano.png"
+                            Grid.Column="0"
+                            ClassId="Mosquitero"
+                            StyleId="0"
+                            CommandParameter="76,3,100,0,1.mediano.png,1.mediano.seleccionado.png"
+                            Clicked="SeleccionPersiana"/>
+                        <ImageButton
+                            Source="2.mediano.png"
+                            Grid.Column="1"
+                            ClassId="Mosquitero"
+                            StyleId="0"
+                            CommandParameter="76,2,100,0,2.mediano.png,2.mediano.selecc.png"
+                            Clicked="SeleccionPersiana"/>
+                    </Grid>
+                    <Grid
+                        x:Name="Accion"
+                        Grid.Column="1"
+                        Grid.Row="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="33*"/>
+                            <ColumnDefinition Width="33*"/>
+                            <ColumnDefinition Width="33*"/>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton
+                            Source="open.png"
+                            Grid.Column="0"
+                            ClassId="BotonPersiana"
+                            StyleId="0"
+                            CommandParameter="xx,x,100,x,open.png,open.selecc.png"
+                            Clicked="AccionPersiana"/>
+                        <ImageButton
+                            Source="stop.png"
+                            Grid.Column="1"
+                            ClassId="BotonPersiana"
+                            StyleId="0"
+                            CommandParameter="xx,x,000,x,stop.png,stop.selecc.png"
+                            Clicked="AccionPersiana"/>
+                        <ImageButton
+                            Source="close.png"
+                            Grid.Column="2"
+                            ClassId="BotonPersiana"
+                            StyleId="0"
+                            CommandParameter="xx,x,050,x,close.png,close.selecc.png"
+                            Clicked="AccionPersiana"/>
+                    </Grid> 
+                    <Grid
+                        x:Name="CANtoldo"
+                        Grid.Column="1"
+                        Grid.Row="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="80*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <ImageButton
+                            Source="desayunadorToldo.png"
+                            Grid.Column="1"
+                            Grid.Row="0"/>
+                        <ImageButton
+                            Source="1.grande.png"
+                            Grid.Column="1"
+                            Grid.Row="1"
+                            ClassId="Toldo"
+                            StyleId="0"
+                            CommandParameter="77,F,100,0,1.grande.png,1.grande.selecc.png"
+                            Clicked="Seleccion"/>
+                        <Grid
+                            x:Name="accionToldo"
+                            Grid.Column="1"
+                            Grid.Row="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33*"/>
+                                <ColumnDefinition Width="33*"/>
+                                <ColumnDefinition Width="33*"/>
+                            </Grid.ColumnDefinitions>
+                            <ImageButton
+                                Source="open.png"
+                                Grid.Column="0"
+                                ClassId="BotonToldo"
+                                StyleId="0"
+                                CommandParameter="xx,x,050,x,open.png,open.selecc.png"
+                                Clicked="AccionToldo"/>
+                            <ImageButton
+                                Source="stop.png"
+                                Grid.Column="1"
+                                ClassId="BotonToldo"
+                                StyleId="0"
+                                CommandParameter="xx,x,000,x,stop.png,stop.selecc.png"
+                                Clicked="AccionToldo"/>
+                            <ImageButton
+                                Source="close.png"
+                                Grid.Column="2"
+                                ClassId="BotonToldo"
+                                StyleId="0"
+                                CommandParameter="xx,x,100,x,close.png,close.selecc.png"
+                                Clicked="AccionToldo"/>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" Margin="0">
+             <Grid BackgroundColor="#F2F1F0" RowSpacing="1">
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                 <Grid.RowDefinitions>
+                     <RowDefinition Height="40"/>
+                 </Grid.RowDefinitions>
+                 <ImageButton Source="07_BACK_BUTTON.png"
+                              Clicked="BotonBack"
+                              Margin="0" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
+                 <ImageButton Source="05_HOME_BUTTON.png"
+                              Clicked="BotonHome"
+                              Margin="0" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
+                 <ImageButton Source="06_SCENES_BUTTON.png"
+                              Clicked="MenuLateral"
+                              Margin="0" Grid.Row="0" Grid.Column="3"  HorizontalOptions="End"/>
+             </Grid>
+        </StackLayout>
+        <StackLayout Margin="7"/>
+    </StackLayout>
+</ContentPage>

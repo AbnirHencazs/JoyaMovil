@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="JoyaMovil.login">
+    <StackLayout BackgroundColor="#F2F1F0">
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image
+                    Grid.Column="0"
+                    Grid.Row="0"    
+                    Source="landingpagefondo.png"/>
+                <Grid
+                    Grid.Column="0"
+                    Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="33*"/>
+                        <RowDefinition Height="33*"/>
+                        <RowDefinition Height="33*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="20*"/>
+                        <ColumnDefinition Width="60*"/>
+                        <ColumnDefinition Width="20*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        RowSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Image
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Source="Inicio.usuario.vacio.png"/>
+                        <Entry
+                            Grid.Column="0"
+                            Grid.Row="0"
+                            Text=""
+                            BackgroundColor="Transparent"
+                            TextColor="DarkGray"
+                            IsTextPredictionEnabled="True"
+                            Placeholder="Usuario"
+                            PlaceholderColor="DarkGray"
+                            HorizontalTextAlignment="Center"
+                            x:Name="loginUser"
+                            />
+                        <Image
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Source="Inicio.contrasena.vacio.png"/>
+                        <Entry
+                            Grid.Column="0"
+                            Grid.Row="1"
+                            Text=""
+                            BackgroundColor="Transparent"
+                            TextColor="DarkGray"
+                            IsTextPredictionEnabled="True"
+                            Placeholder="Contraseña"
+                            PlaceholderColor="DarkGray"
+                            x:Name="loginPassword"
+                            IsPassword="True"
+                            HorizontalTextAlignment="Center"/>
+                        <ImageButton
+                            Grid.Column="0"
+                            Grid.Row="2"
+                            Source="entrar.png"
+                            Clicked="BotonNavegacion"
+                            CommandParameter="entrar.png,entrara.selecc.png,Dos_0"/>
+                    </Grid>
+                </Grid>
+            </Grid>   
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

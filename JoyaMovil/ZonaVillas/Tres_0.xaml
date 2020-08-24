@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JoyaMovil.Tres_0">
+     <StackLayout BackgroundColor="#F2F1F0">
+        <StackLayout Margin="15"/>
+        <StackLayout>
+            <Grid>
+                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                 </Grid.RowDefinitions>
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*"/>
+                     <ColumnDefinition Width="80*"/>
+                     <ColumnDefinition Width="*"/>
+                 </Grid.ColumnDefinitions>
+                <Image
+                Source="banner_villas.png"                
+                Grid.Row="0"
+                Grid.Column ="1"
+               />
+            </Grid>
+        </StackLayout>
+        <StackLayout >
+            <Grid HorizontalOptions="Center"
+                  RowSpacing="15">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height = "100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height = "100"/>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="40*"/>
+                    
+                    <ColumnDefinition Width="40*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <ImageButton
+                    Source="Villas_Escaleras.png"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    CommandParameter="Villas_Escaleras.png,Villas_Escaleras_Seleccionado.png,Tres_1"
+                    Clicked="BotonNavegacion"/>
+                <ImageButton
+                    Source="Villas_Jardines_Ligth.png"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    CommandParameter="Villas_Jardines_Ligth.png,Villas_Jardines_Dark.png,Tres_2"
+                    Clicked="BotonNavegacion"/>
+                <ImageButton
+                    Source="Villas_Estancia_Ligth.png"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    CommandParameter="Villas_Estancia_Ligth.png,Villas_Estancia_Dark.png,Tres_3"
+                    Clicked="BotonNavegacion"/>
+                <ImageButton
+                    Source="Villas_Habitacion_Ligth.png"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    CommandParameter="Villas_Habitacion_Ligth.png,Villas_Habitacion_Dark.png,Tres_4"
+                    Clicked="BotonNavegacion"/>
+                <ImageButton
+                    Source="Villas_Tocador_Ligth.png"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    CommandParameter="Villas_Tocador_Ligth.png,Villas_Tocador_Dark.png,Tres_5"
+                    Clicked="BotonNavegacion"/>
+            </Grid>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" Margin="0">
+             <Grid BackgroundColor="#F2F1F0" RowSpacing="1">
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                 <Grid.RowDefinitions>
+                     <RowDefinition Height="40"/>
+                 </Grid.RowDefinitions>
+                 <ImageButton Source="07_BACK_BUTTON.png"
+                              Clicked="BotonBack"
+                              Margin="0" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
+                 <ImageButton Source="05_HOME_BUTTON.png"
+                              Clicked="BotonHome"
+                              Margin="0" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
+                 <ImageButton Source="06_SCENES_BUTTON.png"
+                              Clicked="MenuLateral"
+                              Margin="0" Grid.Row="0" Grid.Column="3"  HorizontalOptions="End"/>
+             </Grid>
+        </StackLayout>
+        <StackLayout Margin="7"/>
+    </StackLayout>
+</ContentPage>

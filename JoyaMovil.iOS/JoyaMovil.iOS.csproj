@@ -1,0 +1,568 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5996E9D9-21E6-4A98-89AF-30E996ADE914}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>JoyaMovil.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>JoyaMovil.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignProvision>ProvisionamientoAppStore_DeLaLlave</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Marco Rodriguez (DWV22Z8VL8)</CodesignKey>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type --linksdkonly</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <CodesignProvision>ProvisionamientoAppStore_DeLaLlave</CodesignProvision>
+    <CodesignKey>iPhone Distribution: Marco Rodriguez (DWV22Z8VL8)</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile></DocumentationFile>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Distribution: Marco Rodriguez (DWV22Z8VL8)</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>ProvisionamientoAppStore_DeLaLlave</CodesignProvision>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type --linksdkonly</MtouchExtraArgs>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>iPhone Distribution: Marco Rodriguez (DWV22Z8VL8)</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <BuildIpa>true</BuildIpa>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
+<MtouchEnableSGenConc>false</MtouchEnableSGenConc>
+<MtouchLink>SdkOnly</MtouchLink>
+<MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+<CodesignProvision>ProvisionamientoAppStore_DeLaLlave</CodesignProvision>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appIcon120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appIcon180.png" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\landingpagelogo.png" />
+    <ImageAsset Include="Assets.xcassets\Image.imageset\landingpagelogo-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\appIcon120-1.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\notificacion2x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\notificacion3x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Spotlight58px.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Spotlight87px.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Spotlight80px.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\AppStore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+    <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.21.9" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="NETStandard.Library">
+      <Version>2.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>12.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.6.292</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="Com.OneSignal">
+      <Version>3.7.3</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\EDITABLE_SELECCION_ZONA_RESIDENCIAL_BOTON1.png" />
+    <BundleResource Include="Resources\EDITABLE_SELECCION_ZONA_RESIDENCIAL_BOTON2.png" />
+    <BundleResource Include="Resources\Villas_EscenaI_Dark.png" />
+    <BundleResource Include="Resources\Villas_EscenaI_Ligth.png" />
+    <BundleResource Include="Resources\Villas_EscenaII_Dark.png" />
+    <BundleResource Include="Resources\Villas_EscenaII_Ligth.png" />
+    <BundleResource Include="Resources\Villas_EscenaIII_Dark.png" />
+    <BundleResource Include="Resources\Villas_EscenaIII_Ligth.png" />
+    <BundleResource Include="Resources\Villas_EscenaIV_Dark.png" />
+    <BundleResource Include="Resources\Villas_EscenaIV_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Dark.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Habitacion_Dark.png" />
+    <BundleResource Include="Resources\Villas_Habitacion_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Jardines_Dark.png" />
+    <BundleResource Include="Resources\Villas_Jardines_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Tocador_Dark.png" />
+    <BundleResource Include="Resources\Villas_Tocador_Ligth.png" />
+    <BundleResource Include="Resources\Paisajismo_Atrio_Dark.png" />
+    <BundleResource Include="Resources\Paisajismo_Atrio_Ligth.png" />
+    <BundleResource Include="Resources\Paisajismo_Invitado_Dark.png" />
+    <BundleResource Include="Resources\Paisajismo_Invitado_Ligth.png" />
+    <BundleResource Include="Resources\Paisajismo_Villas_Dark.png" />
+    <BundleResource Include="Resources\Paisajismo_Villas_Ligth.png" />
+    <BundleResource Include="Resources\EDITABLE_SELECCION_ZONA_PAISAJISMO_DARK.png" />
+    <BundleResource Include="Resources\Villas_Jardines_Reflector_Dark.png" />
+    <BundleResource Include="Resources\Villas_Jardines_JardinAcceso_Dark.png" />
+    <BundleResource Include="Resources\Villas_Jardines_JardinAcceso_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Jardines_JardinEstancia_Dark.png" />
+    <BundleResource Include="Resources\Villas_Jardines_JardinEstancia_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Jardines_JardinHabitacion_Dark.png" />
+    <BundleResource Include="Resources\Villas_Jardines_JardinHabitacion_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Acceso_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Acceso_Dark.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Encabezado_Dark.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Iluminacion_Dark.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Iluminacion_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Persianas_Dark.png" />
+    <BundleResource Include="Resources\Villas_Estancia_Persianas_Ligth.png" />
+    <BundleResource Include="Resources\Villas_Estancaia_Iluminacion_RGB_Dark.png" />
+    <BundleResource Include="Resources\Villas_Estancaia_Iluminacion_RGB_Ligth.png" />
+    <BundleResource Include="Resources\landingpagelogo.png" />
+    <BundleResource Include="Resources\landingpagefondo.png" />
+    <BundleResource Include="Resources\EDITABLE_SELECCION_ZONA_RESIDENCIAL_BOTON4.png" />
+    <BundleResource Include="Resources\seleccionnivelpaisajismo.png" />
+    <BundleResource Include="Resources\bannerseleccionnivel_paisajismo.png" />
+    <BundleResource Include="Resources\bannerseleccionnivel.png" />
+    <BundleResource Include="Resources\bannerseleccionnivel_residencial.png" />
+    <BundleResource Include="Resources\seleccionarzona_paisajismo.png" />
+    <BundleResource Include="Resources\seleccionarzona_residelcial.png" />
+    <BundleResource Include="Resources\residencial_areacomun.png" />
+    <BundleResource Include="Resources\residencial_habitaciones.png" />
+    <BundleResource Include="Resources\residencial_oficina.png" />
+    <BundleResource Include="Resources\residencial_principal.png" />
+    <BundleResource Include="Resources\banner_villas.png" />
+    <BundleResource Include="Resources\Villas_Escaleras.png" />
+    <BundleResource Include="Resources\Villas_Escaleras_Seleccionado.png" />
+    <BundleResource Include="Resources\banner_villas_escaleras.png" />
+    <BundleResource Include="Resources\banner_villas_jardines.png" />
+    <BundleResource Include="Resources\villas_jardines_jaridnacceso.png" />
+    <BundleResource Include="Resources\villas_jardines_jaridnacceso_seleccionado.png" />
+    <BundleResource Include="Resources\villas_jardines_jaridnestancia.png" />
+    <BundleResource Include="Resources\villas_jardines_jaridnestancia_seleccionado.png" />
+    <BundleResource Include="Resources\villas_jardines_jaridnhabita.png" />
+    <BundleResource Include="Resources\villas_jardines_jaridnhabita_seleccionado.png" />
+    <BundleResource Include="Resources\banner.villas.jardinacceso.png" />
+    <BundleResource Include="Resources\banner.villas.jardinestancia.png" />
+    <BundleResource Include="Resources\banner.villas.jardinhabitacion.png" />
+    <BundleResource Include="Resources\RGB.png" />
+    <BundleResource Include="Resources\reflector.png" />
+    <BundleResource Include="Resources\reflector_seleccionado.png" />
+    <BundleResource Include="Resources\banner.villas.estancia.png" />
+    <BundleResource Include="Resources\acceso.png" />
+    <BundleResource Include="Resources\acceso.seleccionado.png" />
+    <BundleResource Include="Resources\villas.persianas.1.png" />
+    <BundleResource Include="Resources\villas.persianas.1.seleccionado.png" />
+    <BundleResource Include="Resources\villas.persianas.2.png" />
+    <BundleResource Include="Resources\villas.persianas.2.seleccionado.png" />
+    <BundleResource Include="Resources\villas.persianas.3.png" />
+    <BundleResource Include="Resources\villas.persianas.3.seleccionado.png" />
+    <BundleResource Include="Resources\banner.persianas.blackout.png" />
+    <BundleResource Include="Resources\boton.barra.dimeable.png" />
+    <BundleResource Include="Resources\barra.dimeable.png" />
+    <BundleResource Include="Resources\barra.dimiable.sinboton.png" />
+    <BundleResource Include="Resources\dimeable.png" />
+    <BundleResource Include="Resources\dimeable.seleccionada.png" />
+    <BundleResource Include="Resources\abrir.png" />
+    <BundleResource Include="Resources\abrir.selecionado.png" />
+    <BundleResource Include="Resources\banner.villas,tocador.png" />
+    <BundleResource Include="Resources\bannmer.villas.atrio.png" />
+    <BundleResource Include="Resources\estacionamiento.png" />
+    <BundleResource Include="Resources\estacionamiento.seleccionado.png" />
+    <BundleResource Include="Resources\frutales.png" />
+    <BundleResource Include="Resources\frutales.seleccionado.png" />
+    <BundleResource Include="Resources\fuente.png" />
+    <BundleResource Include="Resources\fuente.seleccionado.png" />
+    <BundleResource Include="Resources\tropicales.png" />
+    <BundleResource Include="Resources\tropicales.seleccionado.png" />
+    <BundleResource Include="Resources\motor.seleccionado.png" />
+    <BundleResource Include="Resources\parar.png" />
+    <BundleResource Include="Resources\parar.seleccionado.png" />
+    <BundleResource Include="Resources\oficinas.residencial.png" />
+    <BundleResource Include="Resources\oficinas.cascada.png" />
+    <BundleResource Include="Resources\oficinas.cascada.selecc.png" />
+    <BundleResource Include="Resources\oficinas.escaleras.png" />
+    <BundleResource Include="Resources\oficinas.escaleras.selecc.png" />
+    <BundleResource Include="Resources\oficinas.oficina.png" />
+    <BundleResource Include="Resources\oficinas.oficina.selecc.png" />
+    <BundleResource Include="Resources\oficinas.plataforma.png" />
+    <BundleResource Include="Resources\oficinas.plataforma.selecc.png" />
+    <BundleResource Include="Resources\oficinas.privado.png" />
+    <BundleResource Include="Resources\oficinas.privado.selecc.png" />
+    <BundleResource Include="Resources\oficinas.rampa.png" />
+    <BundleResource Include="Resources\oficinas.rampa.selecc.png" />
+    <BundleResource Include="Resources\oficinas.tocador.png" />
+    <BundleResource Include="Resources\oficinas.tocador.selecc.png" />
+    <BundleResource Include="Resources\oficinas.vestibulo.png" />
+    <BundleResource Include="Resources\oficinas.vestibulo.selecc.png" />
+    <BundleResource Include="Resources\oficinas.selecc.png" />
+    <BundleResource Include="Resources\oficinas.cascada.banner.png" />
+    <BundleResource Include="Resources\oficinas.escaleras.banner.png" />
+    <BundleResource Include="Resources\oficinas.oficina.banner.png" />
+    <BundleResource Include="Resources\oficinas.plataforma.banner.png" />
+    <BundleResource Include="Resources\oficinas.privado.banner.png" />
+    <BundleResource Include="Resources\oficinas.rampa.banner.png" />
+    <BundleResource Include="Resources\oficinas.tocador.banner.png" />
+    <BundleResource Include="Resources\oficinas.vestibulo.banner.png" />
+    <BundleResource Include="Resources\iluminacion.png" />
+    <BundleResource Include="Resources\iluminacion.SELECC.png" />
+    <BundleResource Include="Resources\motor.girar.png" />
+    <BundleResource Include="Resources\motor.selecc.png" />
+    <BundleResource Include="Resources\RGB.selecc.png" />
+    <BundleResource Include="Resources\motor.cascadaoficina.png" />
+    <BundleResource Include="Resources\motor.cascadaoficina.selecc.png" />
+    <BundleResource Include="Resources\luminaria.png" />
+    <BundleResource Include="Resources\luminaria.selecc.png" />
+    <BundleResource Include="Resources\close.png" />
+    <BundleResource Include="Resources\close.selecc.png" />
+    <BundleResource Include="Resources\open.png" />
+    <BundleResource Include="Resources\open.selecc.png" />
+    <BundleResource Include="Resources\stop.png" />
+    <BundleResource Include="Resources\stop.selecc.png" />
+    <BundleResource Include="Resources\villas.habitacion.banner.png" />
+    <BundleResource Include="Resources\persianas.sombra.png" />
+    <BundleResource Include="Resources\villas.tocador.banner.png" />
+    <BundleResource Include="Resources\acceso.selecc.png" />
+    <BundleResource Include="Resources\atrio.estacionamiento.banner.png" />
+    <BundleResource Include="Resources\atrio.frutales.banner.png" />
+    <BundleResource Include="Resources\atrio.fuente.banner.png" />
+    <BundleResource Include="Resources\atrio.tropicales.banner.png" />
+    <BundleResource Include="Resources\estacionamiento.selecc.png" />
+    <BundleResource Include="Resources\frutales.selecc.png" />
+    <BundleResource Include="Resources\fuente.selecc.png" />
+    <BundleResource Include="Resources\tropicales.selecc.png" />
+    <BundleResource Include="Resources\motor.fuente.png" />
+    <BundleResource Include="Resources\motor.fuente.selecc.png" />
+    <BundleResource Include="Resources\areacomun.residencial.banner.png" />
+    <BundleResource Include="Resources\bar.png" />
+    <BundleResource Include="Resources\bar.selecc.png" />
+    <BundleResource Include="Resources\cocina.png" />
+    <BundleResource Include="Resources\cocina.selecc.png" />
+    <BundleResource Include="Resources\comedor.png" />
+    <BundleResource Include="Resources\comedor.selecc.png" />
+    <BundleResource Include="Resources\desayunador.selecc.png" />
+    <BundleResource Include="Resources\desayunador.png" />
+    <BundleResource Include="Resources\entrada.png" />
+    <BundleResource Include="Resources\entrada.selecc.png" />
+    <BundleResource Include="Resources\espejosagua.png" />
+    <BundleResource Include="Resources\espejosagua.selecc.png" />
+    <BundleResource Include="Resources\estancia.png" />
+    <BundleResource Include="Resources\estancia.selecc.png" />
+    <BundleResource Include="Resources\jardin.png" />
+    <BundleResource Include="Resources\jardin.selecc.png" />
+    <BundleResource Include="Resources\saladetv.png" />
+    <BundleResource Include="Resources\saladetv.selecc.png" />
+    <BundleResource Include="Resources\soplador.png" />
+    <BundleResource Include="Resources\soplador.selecc.png" />
+    <BundleResource Include="Resources\terrazalounge.png" />
+    <BundleResource Include="Resources\terrazalounge.selecc.png" />
+    <BundleResource Include="Resources\vestibulo.png" />
+    <BundleResource Include="Resources\vestibulo.selecc.png" />
+    <BundleResource Include="Resources\oficinas.png" />
+    <BundleResource Include="Resources\areacomun.entrada.banner.png" />
+    <BundleResource Include="Resources\OFF.png" />
+    <BundleResource Include="Resources\OFF.selecc.png" />
+    <BundleResource Include="Resources\ON.png" />
+    <BundleResource Include="Resources\ON.selecc.png" />
+    <BundleResource Include="Resources\areacomun.espejosdeagua.banner.png" />
+    <BundleResource Include="Resources\areacomun.vestibulo.banner.png" />
+    <BundleResource Include="Resources\areacomun.soplador.banner.png" />
+    <BundleResource Include="Resources\persianas.png" />
+    <BundleResource Include="Resources\persianas.selecc.png" />
+    <BundleResource Include="Resources\persianas.blackout.png" />
+    <BundleResource Include="Resources\areacomun.comedor.banner.png" />
+    <BundleResource Include="Resources\areacomun.saladetv.banner.png" />
+    <BundleResource Include="Resources\areacomun.jardin.banner.png" />
+    <BundleResource Include="Resources\areacomun.cocina.banner.png" />
+    <BundleResource Include="Resources\areacomun.estancia.banner.png" />
+    <BundleResource Include="Resources\areacomun.desayunador.banner.png" />
+    <BundleResource Include="Resources\murolloron.png" />
+    <BundleResource Include="Resources\murolloron.selecc.png" />
+    <BundleResource Include="Resources\mosquitero.png" />
+    <BundleResource Include="Resources\areacomun.terrazalounge.banner.png" />
+    <BundleResource Include="Resources\fogata.png" />
+    <BundleResource Include="Resources\fogata.selecc.png" />
+    <BundleResource Include="Resources\areacomun.bar.banner.png" />
+    <BundleResource Include="Resources\tocador.png" />
+    <BundleResource Include="Resources\tocador.selecc.png" />
+    <BundleResource Include="Resources\areacomun.escaleras.banner.png" />
+    <BundleResource Include="Resources\escaleras.png" />
+    <BundleResource Include="Resources\escaleras.selecc.png" />
+    <BundleResource Include="Resources\domoacuatico.selecc.png" />
+    <BundleResource Include="Resources\domoacuatico.png" />
+    <BundleResource Include="Resources\principal.domoacuatico.banner.png" />
+    <BundleResource Include="Resources\principal.residencial.banner.png" />
+    <BundleResource Include="Resources\habitacion.png" />
+    <BundleResource Include="Resources\habitacion.selecc.png" />
+    <BundleResource Include="Resources\vestidor.png" />
+    <BundleResource Include="Resources\vestidor.selecc.png" />
+    <BundleResource Include="Resources\privado.png" />
+    <BundleResource Include="Resources\privado.selecc.png" />
+    <BundleResource Include="Resources\gimnasio.png" />
+    <BundleResource Include="Resources\gimnasio.selecc.png" />
+    <BundleResource Include="Resources\carrildenado.png" />
+    <BundleResource Include="Resources\carrildenado.selecc.png" />
+    <BundleResource Include="Resources\bano.png" />
+    <BundleResource Include="Resources\bano.selecc.png" />
+    <BundleResource Include="Resources\vapor.png" />
+    <BundleResource Include="Resources\vapor.selecc.png" />
+    <BundleResource Include="Resources\jacuzzi.png" />
+    <BundleResource Include="Resources\jacuzzi.selecc.png" />
+    <BundleResource Include="Resources\jardincontemplativo.png" />
+    <BundleResource Include="Resources\jardincontemplativo.selecc.png" />
+    <BundleResource Include="Resources\principal.png" />
+    <BundleResource Include="Resources\principal.selecc.png" />
+    <BundleResource Include="Resources\habitaciones.png" />
+    <BundleResource Include="Resources\habitaciones.selecc.png" />
+    <BundleResource Include="Resources\principal.jacuzzi.banner.png" />
+    <BundleResource Include="Resources\principal.bano.banner.png" />
+    <BundleResource Include="Resources\principal.carrildenado.banner.png" />
+    <BundleResource Include="Resources\principal.gimnasio.banner.png" />
+    <BundleResource Include="Resources\principal.habitacion.banner.png" />
+    <BundleResource Include="Resources\principal.jardincontemplativo.banner.png" />
+    <BundleResource Include="Resources\principal.privado.banner.png" />
+    <BundleResource Include="Resources\principal.vestidor.banner.png" />
+    <BundleResource Include="Resources\ventanas.png" />
+    <BundleResource Include="Resources\ventanas.selecc.png" />
+    <BundleResource Include="Resources\motores.png" />
+    <BundleResource Include="Resources\motores.selecc.png" />
+    <BundleResource Include="Resources\principal.vapor.banner.png" />
+    <BundleResource Include="Resources\motor2.png" />
+    <BundleResource Include="Resources\motor2.selecc.png" />
+    <BundleResource Include="Resources\habitaciones.residencial.banner.png" />
+    <BundleResource Include="Resources\alharaca.png" />
+    <BundleResource Include="Resources\alharaca.selecc.png" />
+    <BundleResource Include="Resources\andador.png" />
+    <BundleResource Include="Resources\andador.selecc.png" />
+    <BundleResource Include="Resources\nefelibata.png" />
+    <BundleResource Include="Resources\nefelibata.selecc.png" />
+    <BundleResource Include="Resources\pergola.png" />
+    <BundleResource Include="Resources\pergola.selecc.png" />
+    <BundleResource Include="Resources\quimerica.png" />
+    <BundleResource Include="Resources\quimerica.selecc.png" />
+    <BundleResource Include="Resources\vesanica.png" />
+    <BundleResource Include="Resources\vesanica.selecc.png" />
+    <BundleResource Include="Resources\tocador2.png" />
+    <BundleResource Include="Resources\tocador2.selecc.png" />
+    <BundleResource Include="Resources\extractoraire.png" />
+    <BundleResource Include="Resources\extractoraire.selecc.png" />
+    <BundleResource Include="Resources\habitaciones.jardin.banner.png" />
+    <BundleResource Include="Resources\habitaciones.saladetv.banner.png" />
+    <BundleResource Include="Resources\habitaciones.alharaca.banner.png" />
+    <BundleResource Include="Resources\tocadorg.png" />
+    <BundleResource Include="Resources\tocadorg.selecc.png" />
+    <BundleResource Include="Resources\habitaciones.nefelibata.banner.png" />
+    <BundleResource Include="Resources\habitaciones.quimerica.banner.png" />
+    <BundleResource Include="Resources\habitaciones.vesanica.banner.png" />
+    <BundleResource Include="Resources\habitaciones.andador.banner.png" />
+    <BundleResource Include="Resources\habitaciones.tocador.banner.png" />
+    <BundleResource Include="Resources\habitaciones.pergola.banner.png" />
+    <BundleResource Include="Resources\entrar.png" />
+    <BundleResource Include="Resources\Inicio.contrasena.vacio.png" />
+    <BundleResource Include="Resources\entrara.selecc.png" />
+    <BundleResource Include="Resources\tocadorAreaComun.png" />
+    <BundleResource Include="Resources\tocadorAreaComun.selecc.png" />
+    <BundleResource Include="Resources\tocadorAreaComun.banner.png" />
+    <BundleResource Include="Resources\desayunadorToldo.png" />
+    <BundleResource Include="Resources\terraza.desayunador.png" />
+    <BundleResource Include="Resources\terraza.desayunador.selecc.png" />
+    <BundleResource Include="Resources\principalToldo.png" />
+    <BundleResource Include="Resources\principalCubierta.png" />
+    <BundleResource Include="Resources\principalMotor.png" />
+    <BundleResource Include="Resources\jacuzziVentana.png" />
+    <BundleResource Include="Resources\close.mediano.png" />
+    <BundleResource Include="Resources\close.mediano.selecc.png" />
+    <BundleResource Include="Resources\off.mediano.png" />
+    <BundleResource Include="Resources\off.mediano.selecc.png" />
+    <BundleResource Include="Resources\on.mediano.png" />
+    <BundleResource Include="Resources\on.mediano.selecc.png" />
+    <BundleResource Include="Resources\open.mediano.png" />
+    <BundleResource Include="Resources\open.mediano.selecc.png" />
+    <BundleResource Include="Resources\iluminacion_escalones.png" />
+    <BundleResource Include="Resources\07_BACK_BUTTON.png" />
+    <BundleResource Include="Resources\05_HOME_BUTTON.png" />
+    <BundleResource Include="Resources\06_SCENES_BUTTON.png" />
+    <BundleResource Include="Resources\1.chico.png" />
+    <BundleResource Include="Resources\1.chico.selecc.png" />
+    <BundleResource Include="Resources\1.extrachico.png" />
+    <BundleResource Include="Resources\1.extrachico.selecc.png" />
+    <BundleResource Include="Resources\1.grande.png" />
+    <BundleResource Include="Resources\1.grande.selecc.png" />
+    <BundleResource Include="Resources\1.mediano.png" />
+    <BundleResource Include="Resources\1.mediano.seleccionado.png" />
+    <BundleResource Include="Resources\2.chico.png" />
+    <BundleResource Include="Resources\2.chico.selecc.png" />
+    <BundleResource Include="Resources\2.extrachico.png" />
+    <BundleResource Include="Resources\2.extrachico.selecc.png" />
+    <BundleResource Include="Resources\2.mediano.png" />
+    <BundleResource Include="Resources\2.mediano.selecc.png" />
+    <BundleResource Include="Resources\3.chico.png" />
+    <BundleResource Include="Resources\3.chico.selecc.png" />
+    <BundleResource Include="Resources\3.extrachico.png" />
+    <BundleResource Include="Resources\3.extrachico.selecc.png" />
+    <BundleResource Include="Resources\4.extrachico.png" />
+    <BundleResource Include="Resources\4.extrachico.selecc.png" />
+    <BundleResource Include="Resources\5.chico.png" />
+    <BundleResource Include="Resources\5.chico.selecc.png" />
+    <BundleResource Include="Resources\5.extrachico.png" />
+    <BundleResource Include="Resources\5.extrachico.selecc.png" />
+    <BundleResource Include="Resources\6.chico.png" />
+    <BundleResource Include="Resources\6.chico.selecc.png" />
+    <BundleResource Include="Resources\6.extrachico.png" />
+    <BundleResource Include="Resources\6.extrachico.selecc.png" />
+    <BundleResource Include="Resources\7.extrachico.png" />
+    <BundleResource Include="Resources\7.extrachico.selecc.png" />
+    <BundleResource Include="Resources\area.comun.png" />
+    <BundleResource Include="Resources\area.comun.selecc.png" />
+    <BundleResource Include="Resources\paisajismo.zonas.banner.png" />
+    <BundleResource Include="Resources\atrio.paisajismo.banner.png" />
+    <BundleResource Include="Resources\Inicio.usuario.vacio.png" />
+    <BundleResource Include="Resources\5.mediano.png" />
+    <BundleResource Include="Resources\5.mediano.selecc.png" />
+    <BundleResource Include="Resources\6.mediano.png" />
+    <BundleResource Include="Resources\6.mediano.selecc.png" />
+    <BundleResource Include="Resources\8.extrachico.png" />
+    <BundleResource Include="Resources\8.extrachico.selecc.png" />
+    <BundleResource Include="Resources\sensorAccesoCorrediza_off.png" />
+    <BundleResource Include="Resources\sensorAccesoCorrediza_on.png" />
+    <BundleResource Include="Resources\sensorAccesoOficina_off.png" />
+    <BundleResource Include="Resources\sensorAccesoOficina_on.png" />
+    <BundleResource Include="Resources\sensorAccesoOficina1_off.png" />
+    <BundleResource Include="Resources\sensorAccesoOficina1_on.png" />
+    <BundleResource Include="Resources\sensorAccesoOficina2_off.png" />
+    <BundleResource Include="Resources\sensorAccesoOficina2_on.png" />
+    <BundleResource Include="Resources\sensorAccesoPrincipal_off.png" />
+    <BundleResource Include="Resources\sensorAccesoPrincipal_on.png" />
+    <BundleResource Include="Resources\sensorAccesoPrivado_off.png" />
+    <BundleResource Include="Resources\sensorAccesoPrivado_on.png" />
+    <BundleResource Include="Resources\sensorAccesoVilla_off.png" />
+    <BundleResource Include="Resources\sensorAccesoVilla_on.png" />
+    <BundleResource Include="Resources\sensorAlberca_off.png" />
+    <BundleResource Include="Resources\sensorAlberca_on.png" />
+    <BundleResource Include="Resources\sensorAlharaca_off.png" />
+    <BundleResource Include="Resources\sensorAlharaca_on.png" />
+    <BundleResource Include="Resources\sensorCochera1_off.png" />
+    <BundleResource Include="Resources\sensorCochera1_on.png" />
+    <BundleResource Include="Resources\sensorCochera2_off.png" />
+    <BundleResource Include="Resources\sensorCochera2_on.png" />
+    <BundleResource Include="Resources\sensorCochera3_off.png" />
+    <BundleResource Include="Resources\sensorCochera3_on.png" />
+    <BundleResource Include="Resources\sensorCochera4_off.png" />
+    <BundleResource Include="Resources\sensorCochera4_on.png" />
+    <BundleResource Include="Resources\sensorCochera5_off.png" />
+    <BundleResource Include="Resources\sensorCochera5_on.png" />
+    <BundleResource Include="Resources\sensorCocina_off.png" />
+    <BundleResource Include="Resources\sensorCocina_on.png" />
+    <BundleResource Include="Resources\sensorDesayunador_off.png" />
+    <BundleResource Include="Resources\sensorDesayunador_on.png" />
+    <BundleResource Include="Resources\sensoresBanner.png" />
+    <BundleResource Include="Resources\sensorEstanciaVilla_off.png" />
+    <BundleResource Include="Resources\sensorEstanciaVilla_on.png" />
+    <BundleResource Include="Resources\sensorHabitacionVilla_off.png" />
+    <BundleResource Include="Resources\sensorHabitacionVilla_on.png" />
+    <BundleResource Include="Resources\sensorJacuzzi_off.png" />
+    <BundleResource Include="Resources\sensorJacuzzi_on.png" />
+    <BundleResource Include="Resources\sensorJacuzziVentila_off.png" />
+    <BundleResource Include="Resources\sensorJacuzziVentila_on.png" />
+    <BundleResource Include="Resources\sensorNefelibata_off.png" />
+    <BundleResource Include="Resources\sensorNefelibata_on.png" />
+    <BundleResource Include="Resources\sensorPuertaServicio_off.png" />
+    <BundleResource Include="Resources\sensorPuertaServicio_on.png" />
+    <BundleResource Include="Resources\sensorQuimerica_off.png" />
+    <BundleResource Include="Resources\sensorQuimerica_on.png" />
+    <BundleResource Include="Resources\sensorSala_off.png" />
+    <BundleResource Include="Resources\sensorSala_on.png" />
+    <BundleResource Include="Resources\sensorSoplador_off.png" />
+    <BundleResource Include="Resources\sensorSoplador_on.png" />
+    <BundleResource Include="Resources\sensorTerraza_off.png" />
+    <BundleResource Include="Resources\sensorTerraza_on.png" />
+    <BundleResource Include="Resources\sensorVentilaServicio_off.png" />
+    <BundleResource Include="Resources\sensorVentilaServicio_on.png" />
+    <BundleResource Include="Resources\sensorVesanica_off.png" />
+    <BundleResource Include="Resources\sensorVesanica_on.png" />
+    <BundleResource Include="Resources\sensorVestidor_off.png" />
+    <BundleResource Include="Resources\sensorVestidor_on.png" />
+    <BundleResource Include="Resources\sensorWCNefelibata_off.png" />
+    <BundleResource Include="Resources\sensorWCNefelibata_on.png" />
+    <BundleResource Include="Resources\sensorWCVilla_off.png" />
+    <BundleResource Include="Resources\sensorWCVilla_on.png" />
+    <BundleResource Include="Resources\sensoresNavegacion.png" />
+    <BundleResource Include="Resources\sensoresNavegacionSelecc.png" />
+    <BundleResource Include="Resources\4.chico.png" />
+    <BundleResource Include="Resources\4.chico.selecc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JoyaMovilServiceExtension\JoyaMovilServiceExtension.csproj">
+      <IsAppExtension>true</IsAppExtension>
+      <Project>{91188B6D-515D-4DA7-B613-659C92E19897}</Project>
+      <Name>JoyaMovilServiceExtension</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\JoyaMovil\JoyaMovil.projitems" Label="Shared" />
+</Project>

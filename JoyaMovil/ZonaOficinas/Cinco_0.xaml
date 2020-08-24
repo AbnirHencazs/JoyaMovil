@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="JoyaMovil.Cinco_0">
+    <StackLayout BackgroundColor="#F2F1F0">
+        <StackLayout Margin="15"/>
+        <StackLayout>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="80*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image
+                    Source="oficinas.residencial.png"
+                    Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+        <StackLayout>
+            <ScrollView>
+                <Grid
+                    RowSpacing="15">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="40*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="100"/>
+                    </Grid.RowDefinitions>
+                    <ImageButton
+                        Source="oficinas.rampa.png"
+                        Grid.Column="1"
+                        Grid.Row="0"
+                        CommandParameter="oficinas.rampa.png,oficinas.rampa.selecc.png,Cinco_1"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="oficinas.plataforma.png"
+                        Grid.Column="2"
+                        Grid.Row="0"
+                        CommandParameter="oficinas.plataforma.png,oficinas.plataforma.selecc.png,Cinco_2"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="oficinas.cascada.png"
+                        Grid.Column="1"
+                        Grid.Row="1"
+                        CommandParameter="oficinas.cascada.png,oficinas.cascada.selecc.png,Cinco_3"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="oficinas.privado.png"
+                        Grid.Column="2"
+                        Grid.Row="1"
+                        CommandParameter="oficinas.privado.png,oficinas.privado.selecc.png,Cinco_4_1"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="oficinas.oficina.png"
+                        Grid.Column="1"
+                        Grid.Row="2"
+                        CommandParameter="oficinas.oficina.png,oficinas.oficina.selecc.png,Cinco_5"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="oficinas.vestibulo.png"
+                        Grid.Column="2"
+                        Grid.Row="2"
+                        CommandParameter="oficinas.vestibulo.png,oficinas.vestibulo.selecc.png,Cinco_6"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="oficinas.tocador.png"
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        CommandParameter="oficinas.tocador.png,oficinas.tocador.selecc.png,Cinco_7"
+                        Clicked="BotonNavegacion"/>
+                    <ImageButton
+                        Source="oficinas.escaleras.png"
+                        Grid.Column="2"
+                        Grid.Row="3"
+                        CommandParameter="oficinas.escaleras.png,oficinas.escaleras.selecc.png,Cinco_8"
+                        Clicked="BotonNavegacion"/>
+                </Grid>
+            </ScrollView>
+        </StackLayout>
+        <StackLayout VerticalOptions="EndAndExpand" Margin="0">
+             <Grid BackgroundColor="#F2F1F0" RowSpacing="1">
+                 <Grid.ColumnDefinitions>
+                     <ColumnDefinition Width="*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="15*" />
+                     <ColumnDefinition Width="*" />
+                 </Grid.ColumnDefinitions>
+                 <Grid.RowDefinitions>
+                     <RowDefinition Height="40"/>
+                 </Grid.RowDefinitions>
+                 <ImageButton Source="07_BACK_BUTTON.png"
+                              Clicked="BotonBack"
+                              Margin="0" Grid.Row="0" Grid.Column="1" HorizontalOptions="Start"/>
+                 <ImageButton Source="05_HOME_BUTTON.png"
+                              Clicked="BotonHome"
+                              Margin="0" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"/>
+                 <ImageButton Source="06_SCENES_BUTTON.png"
+                              Clicked="MenuLateral"
+                              Margin="0" Grid.Row="0" Grid.Column="3"  HorizontalOptions="End"/>
+             </Grid>
+        </StackLayout>
+        <StackLayout Margin="7"/>
+    </StackLayout>
+</ContentPage>
