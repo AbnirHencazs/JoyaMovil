@@ -40,7 +40,12 @@ namespace JoyaMovil
             {
                 await DisplayAlert("Error", "Inicie sesión.", "OK");
             }
-            else if (login.sesionUsuario.NivelUsuario != TipoUsuario.Invitado)
+            else if (login.sesionUsuario.NivelUsuario != TipoUsuario.Superusuario)
+            {
+                await DisplayAlert("Error", "Permisos insuficientes. Contacte a su administrador", "OK");
+            }
+
+            if(login.sesionUsuario.NivelUsuario == TipoUsuario.Superusuario)
             {
                 App.MasterD.IsPresented = false;
                 await App.MasterD.Detail.Navigation.PushAsync(new Nip.NipCreate());
